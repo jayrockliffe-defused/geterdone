@@ -28,7 +28,7 @@ An autonomous project execution engine for [Claude Cowork](https://claude.com). 
 | **Scheduling** | None | None | Calendar-aware with daily/weekly caps and deep work blocks |
 | **Dashboard** | None | None | Interactive HTML with clickable task cards |
 
-**The short version:** Cowork is a powerful single-session tool. Geterdone adds the persistent layer — so your projects survive between sessions, execute autonomously, and get smarter over time.
+**The short version:** Cowork is a powerful single-session tool. Geterdone adds the persistent layer — so your projects survive between sessions, execute autonomously or semi-automatically, and get smarter over time.
 
 ---
 
@@ -37,6 +37,7 @@ An autonomous project execution engine for [Claude Cowork](https://claude.com). 
 1. **Install**: Drag `geterdone.plugin` into your Cowork window (or install from the Plugin Directory)
 2. **Run `/setup`**: Geterdone scans your connected tools, recommends additions, and generates your config. Takes 2 minutes.
 3. **Run `/new-project`**: Describe your goal. Geterdone handles the rest.
+4. **NOTE** You can ask your Claude to evaluate the Geterdone plug-in (or any plugin or skill) and suggest enhancements based on your chat history and what Claude knows about you. 
 
 ---
 
@@ -44,7 +45,7 @@ An autonomous project execution engine for [Claude Cowork](https://claude.com). 
 
 | Command | What it does |
 |---------|-------------|
-| `/setup` | One-time onboarding. Discovers your tools, recommends connectors, builds your config file. |
+| `/setup` | One-time onboarding. Discovers your tools, recommends connectors, and builds your config file. |
 | `/new-project` | Describe a goal → get a triaged, scored, day-by-day execution plan |
 | `/execute` | Runs today's tasks autonomously. QA gates verify output. Memory gets updated. |
 | `/status` | Interactive dashboard — clickable cards, progress bars, intelligence tab |
@@ -57,7 +58,7 @@ An autonomous project execution engine for [Claude Cowork](https://claude.com). 
 
 ## What it does (the core loop)
 
-```
+```EXAMPLE
 You: "/new-project Launch a new landing page"
 
 Geterdone:
@@ -156,7 +157,7 @@ Geterdone's execute skill can talk to any MCP tool you have connected. Some idea
 - **Linear** — issue tracking sync
 - **Slack** — team notifications
 
-Add your own in `skills/execute/references/integrations/`.
+Add your own (or ask Claude to do it for you) in `skills/execute/references/integrations/`.
 
 ### Set your schedule
 
@@ -218,11 +219,11 @@ The revenue-weighted decision filters exist because when you're pre-revenue, eve
 
 ## Need help customizing?
 
-If you want help adapting Geterdone for your workflows — custom decision filters, project templates, integration wiring, profitability analysis — we do consulting.
+If you want help adapting Geterdone for your workflows — custom decision filters, project templates, integration wiring, profitability analysis — I offer consulting, but only for companies that help humans. I won't work for spirits, Pharma, and most CPGs.
 
 **Book a call**: [jayrockliffe@gmail.com](mailto:jayrockliffe@gmail.com)
 
-We built this while building [Defusely](https://defusely.com) — Reddit Crisis Response for PR agencies and corporate comms teams. If your brand has ever had a Reddit problem, [check us out](https://defusely.com).
+Built while building [Defusely](https://defusely.com) — Reddit Crisis Response for PR agencies and corporate comms teams. If your brand has ever had a Reddit problem, [check us out](https://defusely.com).
 
 ---
 
