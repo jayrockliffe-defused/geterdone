@@ -8,7 +8,7 @@ An autonomous project execution engine for [Claude Cowork](https://claude.com). 
 
 ## Dashboard preview
 
-![Geterdone Command Center](dashboard-preview.png)
+![Geterdone Command Center](https://defusely.com/screens/product/fresh-dashboard.png?v=9)
 
 *The `/status` command renders a fully interactive dashboard — clickable project cards, decision filter scores, automation status, velocity tracking, and proactive intelligence. No network calls. Works offline. Click any task to get Claude's help executing it.*
 
